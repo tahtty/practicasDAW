@@ -1,0 +1,59 @@
+a:link{
+	text-decoration:none;
+	color: orange;
+}
+a:hover{
+	text-decoration:underline;
+	color:blue;
+}
+a:visited{
+	text-decoration:none;
+	color: orange
+}
+body{
+	font-family:Sans-serif;
+	padding: 50px;
+}
+#info ul li:first-child,#info ul li:nth-child(2){
+	border-right: 1px solid black;
+}
+h2{
+	color: orange;
+}
+p{
+	margin-left: 350px;
+}
+h2{
+	float: left;
+}
+section{
+	margin-left: 350px;
+}
+section+section{
+	display: block;
+}
+ul:not(#info){
+	list-style: none;
+	margin-left: 310px;
+}
+#info ul li{
+	display: inline;
+	margin-left: 0px;
+	padding-right: 5px;
+	padding-left: 0px;
+	font-size: small;
+	list-style: none;
+}
+#info ul{
+	margin-left: 0px;
+}
+#info p{
+	margin-left: 0px;
+}
+body div{
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+label dt{
+	display: inline;
+}

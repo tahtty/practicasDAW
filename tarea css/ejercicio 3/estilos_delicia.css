@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Marko+One');
+		body{
+			font-family: Verdana,sans-serif;/*sans-serif si no funcionaba en mi navegador, pero si funcionó*/
+			font-size: 100%;
+			font-family: Georgia;
+			line-height: 1.75em;
+			margin-left: 15%;
+			margin-right: 15%;
+			background-color: #d2dc9d;
+		}
+		h1{
+			/*font-family: Marko One,Georgia,serif;*/
+			/*font-size: 1.5em;*/
+			font: 1.5em Marko One,Georgia,serif;
+			color: purple;
+			text-shadow: .1em .1em .2em lightslategray;
+		}
+		p,dl{
+			font-size: 0.875em;/*14 dividido para 16*/
+		}
+		dt{
+			font-weight: bold;
+		}
+		strong{
+			font-style: italic;
+		}
+		dl dt strong{
+			color: maroon;
+		}
+		#info{
+			/*color: teal;*/
+		}
+		#info p::first-line{/* Solo abarca Guayaquil-Ecuador, es lo que dice la consigna*/
+			font-style: italic;
+			color: gray;
+		}
+		.price{
+			family-font: Georgia,serif;
+			color: gray;
+			font-style: italic;
+		}
+		.label{
+			font-weight: bold;
+			font-style: normal;
+			font-variant: small-caps;
+		}
+		.warning{
+			color: red;
+			font-size: x-small;
+		}
+		h1,h2,#info{
+			text-align: center;
+		}
+		h2{
+			text-transform: uppercase;
+			letter-spacing: .5em;
+			color: purple;
+		}
+		h2+p{
+			text-align: center;
+		}
+		dt{
+			color: sienna;
+		}
+		ul{
+		  list-style: none;
+		  margin: 0px;
+		  padding: 0px;
+		}
+		a:link{
+		  text-decoration:none;
+		  color: #939;
+		}
+		a:visited{
+		  color: #937393;
+		}
+		a:hover{
+			background-color: white;
+			color: #c700f2;
+		}
+		body {
+			background: #d2dc9d url(images/ladelicia.png) no-repeat center;
+			background-attachment: fixed;
+			/*background-size: 100px; en la tarea dice que cambiemos el tamaño al 100px, pero en la img final sale grande la imagen de fondo*/
+		}
+		#header{
+			background-image: url("images/ladelicia-sombra.png");
+			background-repeat: no-repeat;
+			background-position: bottom right 8%;
+			background-color: rgba(255,255,255, .5);
+			padding: 50px;
+		}
