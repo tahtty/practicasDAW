@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	var btn = document.querySelector(".comment-input button");
-	btn.addEventListener("click",agregarComentario);
-	var txtBox = document.querySelector(".comment-input input");
-	txtBox.addEventListener("keypress",function(event){
+	var btn = $(".comment-input button");
+	btn.click(agregarComentario);
+	var txtBox = $(".comment-input input");
+	txtBox.keypress(function(event){
 		if(event.keyCode === 13){
 			agregarComentario();
 		}
@@ -10,14 +10,14 @@ $(document).ready(function(){
 });
 
 function agregarComentario(){
-	var txtInput = document.querySelector(".comment-input input");
-	console.log(txtInput.value);
-	if(txtInput.vale === ""){
+	var txtInput = $(".comment-input input");
+	console.log(txtInput.val());
+	if(txtInput.val() === ""){
 		return;
 	}
 	nuevoComentario = document.createElement("p");
-	nuevoComentario.textContent = txtInput.value;
-	sectionComments = document.querySelector(".comments");
-	sectionComments.appendChild(nuevoComentario);
-	txtInput.value = "";
+	nuevoComentario.textContent = txtInput.val();
+	sectionComments = $(".comments");
+	sectionComments.append(nuevoComentario);
+	txtInput.val("");
 }
