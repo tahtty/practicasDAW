@@ -46,7 +46,10 @@ function agregarCont(id){
 	if(id=="3"){
 		$(".content").empty();
 		var cuadro=document.createElement("input");
+		var btn=document.createElement("button");
 		$(".content").append(cuadro);
+		$(".content").append(btn);
+		btn.click(agregarTarea);
 		$(".content input").keypress(function(event){
 		if(event.keyCode === 13){
 			agregarTarea();
