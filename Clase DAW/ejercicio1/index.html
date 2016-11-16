@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <div id="main"><h2>DAW?</h2><p id="mensaje"></p></div>
+
+
+    <button type="button" onclick="cargarInfo()">Averiguar</button>
+	<script type="text/javascript">
+		function cargarInfo(){
+			var xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange=function(){
+				console.log(xhttp.readyState);
+				if(xhttp.readyState==4 && xhttp.status==200){
+					var ptag=document.getElementById("mensaje");
+					ptag.innerHTML=xhttp.responseText;
+				}
+			};
+			xhttp.open("GET","info.txt");
+			xhttp.send();
+		}
+	</script>
+</body>
+</html>

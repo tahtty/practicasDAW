@@ -49,7 +49,8 @@ function agregarCont(id){
 		var btn=document.createElement("button");
 		$(".content").append(cuadro);
 		$(".content").append(btn);
-		btn.click(agregarTarea);
+		$(btn).html("+");
+		$(btn).click(agregarTarea);
 		$(".content input").keypress(function(event){
 		if(event.keyCode === 13){
 			agregarTarea();
@@ -57,14 +58,18 @@ function agregarCont(id){
 	});
 }}
 function agregarTarea(){
-	if($(".content input").val() === ""){
+	var contenido=$(".content input");
+	$(contenido).change(function(){
+		$(".content p").html("");
+	});
+	if($(contenido).val() === ""){
 		return;
 	}
-	nuevaTarea = document.createElement("p");
-	nuevaTarea.textContent = $(".content input").val();
+	nuevaTarea = document.createElement("li");
+	nuevaTarea.textContent = $(contenido).val();
 	reciente.push(nuevaTarea.textContent);
-	$(".content input").val("");
+	$(contenido).val("");
 	aviso = document.createElement("p");
 	aviso="Agregado a Recientes";
-	$(".content").append("	"+aviso);
+	$(".content").append("<br><br>"+aviso);
 }
