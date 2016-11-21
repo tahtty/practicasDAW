@@ -33,31 +33,41 @@
       </div>
       
     </div>
-    <script type="text/javascript">
-        function cargarInfo(){
-            var xhttp=new XMLHttpRequest();
-            xhttp.onreadystatechange=function(){
-                console.log(xhttp.readyState);
-                if(xhttp.readyState==4 && xhttp.status==200){
-                    var json=JSON.parse(xhttp.responseText);
-                    var tabla=document.getElementById("tablacarros")
-                    json.forEach(function(dato)){
-                        var tr=document.createElement("tr");
-                        var tdmarca=document.createElement("td");
-                        var tdmodelo=document.createElement("td");
-                        var tdanio=document.createElement("td");
-                        tdmarca.textContent=dato.marca;
-                        tdmodelo.textContent=dato.modelo;
-                        tdanio.textContent=dato.anio;
-                        tr.appendChild(tdmarca);
-                        tr.appendChild(tdmodelo);
-                        tr.appendChild(tdanio);
-                    }
+
+<script>
+    function cargarInfo() {
+        var xhttp= new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(xhttp.readyState==4 && xhttp.status==200&&document.querySelector("#tablacarros tr td")==undefined){
+                var dato = JSON.parse(xhttp.responseText);
+                for (var i = 0; i <dato.length; i++) {
+                    var tabla = document.getElementById("tablacarros");
+                    var tr = document.createElement("tr");
+                    var tdmarca = document.createElement("td");
+                    var tdmodelo = document.createElement("td");
+                    var tdanio = document.createElement("td");
+
+                    tdmarca.textContent = dato[i].marca
+                    tdmodelo.textContent = dato[i].modelo
+                    tdanio.textContent = dato[i].anio
+
+                    tr.appendChild(tdmarca)
+                    tr.appendChild(tdmodelo)
+                    tr.appendChild(tdanio)
+                    tabla.appendChild(tr)
+
                 }
-            };
-            xhttp.open("GET","datos.json");
-            xhttp.send();
-        }
-    </script>
+                
+                
+            }
+          };
+        xhttp.open("GET","datos.json");
+        xhttp.send();
+      }
+
+
+
+  </script>
+
 </body>
 </html>

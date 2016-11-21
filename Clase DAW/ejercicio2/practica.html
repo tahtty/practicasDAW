@@ -14,22 +14,29 @@
       </div>
       <button type="button" onclick="cargarInfo()">Obtener datos</button>
     </div>
-    <script type="text/javascript">
-    function cargarInfo(){
-      var xhttp=new XMLHttpRequest();
-      xhttp.onreadystatechange=function(){
-        if(xhttp.readyState==4 && xhttp.status==200){
-          var datos=xhttp.responseXML;
-          var pNombre=document.getElementById("nombreTxt");
-          pNombre.innerHTML(datos.querySelector(("persona nombre").textContent);
-          var pApellido=document.getElementById("apellidoTxt");
-          pApellido.innerHTML(datos.querySelector(("persona apellido").textContent);
-          var pEdad=document.getElementById("edadTxt");
-          pEdad.innerHTML(datos.querySelector(("persona edad").textContent);
-      };
-      xhttp.open("GET","datos.xml");
-      xhttp.send();
-    }}
-  </script>
 </body>
+  <script>
+      function cargarInfo() {
+        var xhttp= new XMLHttpRequest();
+        xhttp.onreadystatechange =
+          function(){
+            if(xhttp.readyState==4 && xhttp.status==200){
+
+              var persona = xhttp.responseXML;
+              nombre = persona.querySelector("persona nombre").textContent;
+              apellido = persona.querySelector("persona apellido").textContent;
+              edad = persona.querySelector("persona edad").textContent;
+              document.getElementById("nombreTxt").textContent = nombre;
+              document.getElementById("apellidoTxt").textContent = apellido;
+              document.getElementById("edadTxt").textContent = edad;
+            }
+          };
+        xhttp.open("GET","datos.xml");
+        xhttp.send();
+      }
+
+
+
+  </script>
+
 </html>
