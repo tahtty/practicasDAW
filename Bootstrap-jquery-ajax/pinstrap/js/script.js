@@ -19,14 +19,14 @@ function cargarDato(r){
 	});
 }
 
-function buscar(){
-	var url="http://api.flickr.com/services/feeds/photos_public.gne?tags=espol&format=json&jsoncallback=?";
-	$.getJSON(url, function(resp){
-		/*console.log(resp);*/
-		cargarDato(resp);
-	});
+function buscar(hashtag) {
+var url = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?&";
+
+$.getJSON(url,{tags: hashtag ,format:"json"} ,function(resp) {
+crear(resp);
+});
 }
 
 $(document).ready(function(){
-	buscar();
+	buscar("Espol");
 });
