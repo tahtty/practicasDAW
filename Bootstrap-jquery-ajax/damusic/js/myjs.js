@@ -19,7 +19,6 @@ function obtenerArtista(nombre) {
 function tops(artista) {
 	ur = "https://api.spotify.com/v1/artists/"+artista.id+"/top-tracks?country=EC"
 	$.getJSON(ur, function(resp) {
-			
 			canciones  =[];
 			for (var i = 0; i < 5 ;i++) {
 				canciones.push(resp.tracks[i].name);
@@ -32,22 +31,23 @@ function tops(artista) {
 function getyoutube(artista,canciones) {
 	link = "https://www.googleapis.com/youtube/v3/search";
 	query =[];
-	var re=[];
 	for (var i = canciones.length - 1; i >= 0; i--) {
 		busqueda = artista.nombre+" "+canciones[i];
 		query.push(busqueda);
 	}
 	videos =[]
-	for (var i = query.length - 1; i >= 0; i--) {
+	for (var i = 0; i <= canciones-1; i++) {
 		$.getJSON(link, {jsoncallback: '?',key: k ,q: query[i] ,part:"snippet",type: "video"}, function(res) {
-			console.log(res);
-			console.log(re);
-			re.push(res);
-			console.log(re);
+			console.log("anterior");
+			console.log(videos);
+			videos.push(res);
+			console.log("despues");
+			console.log(videos);
 	});
 	}
-	console.log(re);
-	llenar(re,artista);
+	console.log("terminado");
+	console.log(videos);
+	/*llenar(videos,artista);*/
 }
 
 function llenar(r,a){
