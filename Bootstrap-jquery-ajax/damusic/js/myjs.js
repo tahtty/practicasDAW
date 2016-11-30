@@ -31,13 +31,14 @@ function tops(artista) {
 function getyoutube(artista,canciones) {
 	link = "https://www.googleapis.com/youtube/v3/search";
 	query =[];
+	var j;
 	for (var i = canciones.length - 1; i >= 0; i--) {
 		busqueda = artista.nombre+" "+canciones[i];
 		query.push(busqueda);
 	}
 	videos =[]
-	for (var i = 0; i <= canciones-1; i++) {
-		$.getJSON(link, {jsoncallback: '?',key: k ,q: query[i] ,part:"snippet",type: "video"}, function(res) {
+	for (j = 0; j<= canciones.length-1; j++) {
+		$.getJSON(link, {jsoncallback: '?',key: k ,q: query[j] ,part:"snippet",type: "video"}, function(res) {
 			console.log("anterior");
 			console.log(videos);
 			videos.push(res);
@@ -45,9 +46,11 @@ function getyoutube(artista,canciones) {
 			console.log(videos);
 	});
 	}
-	console.log("terminado");
-	console.log(videos);
-	/*llenar(videos,artista);*/
+	if(j==canciones.length){
+		console.log("terminado");
+		console.log(videos);
+		/*llenar(videos,artista);*/
+	}
 }
 
 function llenar(r,a){
