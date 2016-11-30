@@ -23,6 +23,7 @@ function tops(artista) {
 			for (var i = 0; i < 5 ;i++) {
 				canciones.push(resp.tracks[i].name);
 			}
+			console.log(canciones)
 			getyoutube(artista,canciones);
 
 	});
@@ -32,7 +33,7 @@ function getyoutube(artista,canciones) {
 	link = "https://www.googleapis.com/youtube/v3/search";
 	query =[];
 	var j;
-	for (var i = canciones.length - 1; i >= 0; i--) {
+	for (var i =  0; i < canciones.length; i++){
 		busqueda = artista.nombre+" "+canciones[i];
 		query.push(busqueda);
 	}
