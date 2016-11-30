@@ -42,6 +42,7 @@ function getyoutube(artista,canciones) {
 			videos.push(res);
 			if(videos.length===canciones.length){
 				llenar(videos,artista);
+				console.log(videos);
 			}
 			
 	});
@@ -57,12 +58,12 @@ function llenar(r,a){
 	for (var i = 1; i <=r.length; i++) {
 		var vlink="https://www.youtube.com/embed/"+r[i-1].items[0].id.videoId;
 		var iframe=document.createElement("iframe");
-		$(iframe).attr("width","400");
-		$(iframe).attr("height","300");
+		$(iframe).attr("width","300");
+		$(iframe).attr("height","200");
 		$(iframe).attr("src",vlink);
 		console.log(r[i-1].items[0].snippet.title);
-		$("#p"+i+" panel .panel-default .panel-footer p").html(r[i-1].items[0].snippet.thumbnails.title);
-		$("#p"+i+" panel .panel-default .panel-body").append(iframe);
+		$("#p"+i+" div .panel-footer p").html(r[i-1].items[0].snippet.title);
+		$("#p"+i+" div .panel-body").append(iframe);
 	}
 	
 }
