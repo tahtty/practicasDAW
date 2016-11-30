@@ -39,18 +39,14 @@ function getyoutube(artista,canciones) {
 	videos =[]
 	for (j = 0; j<= canciones.length-1; j++) {
 		$.getJSON(link, {jsoncallback: '?',key: k ,q: query[j] ,part:"snippet",type: "video"}, function(res) {
-			console.log("anterior");
-			console.log(videos);
 			videos.push(res);
-			console.log("despues");
-			console.log(videos);
+			if(videos.length===canciones.length){
+				llenar(videos,artista);
+			}
+			
 	});
 	}
-	if(j==canciones.length){
-		console.log("terminado");
-		console.log(videos);
-		/*llenar(videos,artista);*/
-	}
+	
 }
 
 function llenar(r,a){
@@ -58,16 +54,14 @@ function llenar(r,a){
 	$("#informacion h2").html(a.nombre);
 	$("#informacion a").attr("href",a.spotify);
 	$("#informacion p").html(a.seguidores+" seguidores");
-	console.log(r.length);
 	for (var i = 1; i <=r.length; i++) {
 		var vlink="https://www.youtube.com/embed/"+r[i-1].items[0].id.videoId;
-		console.log(vlink);
 		var iframe=document.createElement("iframe");
 		$(iframe).attr("width","400");
 		$(iframe).attr("height","300");
 		$(iframe).attr("src",vlink);
-		console.log(r[i].items[0].snippet.thumbnails.title);
-		$("#p"+i+" panel .panel-default .panel-footer p").html(r[i].items[0].snippet.thumbnails.title);
+		console.log(r[i-1].items[0].snippet.title);
+		$("#p"+i+" panel .panel-default .panel-footer p").html(r[i-1].items[0].snippet.thumbnails.title);
 		$("#p"+i+" panel .panel-default .panel-body").append(iframe);
 	}
 	
