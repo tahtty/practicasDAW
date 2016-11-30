@@ -69,10 +69,10 @@ function llenar(r,a){
 }
 
 $(document).ready(function() {
-	/*$("#inputTags +button").click(function(e) {
+	$("#input+button").click(function(e) {
 	var inp=$("#input").val();
 	console.log(inp);
+	$("iframe").remove();
 	obtenerArtista(inp);
-});*/
-	obtenerArtista("ColdPlay");
+});
 });
