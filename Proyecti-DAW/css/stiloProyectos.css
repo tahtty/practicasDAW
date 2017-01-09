@@ -1,0 +1,89 @@
+/**#headingOne{
+	background-color: #339EAD;
+	border-color: #339EAD;
+}*/
+
+.panel-default > .panel-heading{
+	background-color: #339EAD;
+	border-color: #339EAD;
+	color: white;
+	font-weight: normal;
+}
+
+#accordion{
+	margin: 10px;
+}
+
+.acordeon-title{
+	color: #F59130;
+ 	font-size: 1.0em;
+ 	font-family: sans-serif;
+
+
+}
+
+.acordeon-content{
+	font-family: sans-serif;
+	color: #339EAD;
+	font-style: italic;
+
+}
+
+.archivos a:hover{
+	background-color: #339EAD;
+	color: #555555;
+}
+
+div.floaty {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%; /* circular */
+  background-color: pink;
+  top: 50%; /* Starting y position */
+  left: 0; /* Starting x position */
+}
+
+div.icono{
+	position: fixed;
+    top: 50%;
+    right: 8%;
+    width: 8%;
+    height: 10%;
+}
+
+.btn-default{
+	background-color: #F59130;
+	color: white;
+}
+
+.center {
+    margin-top:50px;   
+}
+
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.modal-footer {
+    	padding: 0;
+	}
+    
+.modal-footer .btn-group button {
+	height:40px;
+	border-top-left-radius : 0;
+	border-top-right-radius : 0;
+	border: none;
+	border-right: 1px solid #ddd;
+}
+	
+.modal-footer .btn-group:last-child > button {
+	border-right: 0;
+}
+
+div.panel{
+	background-color: white;
+}
+
+div.container{
+	background-color: white;
+}

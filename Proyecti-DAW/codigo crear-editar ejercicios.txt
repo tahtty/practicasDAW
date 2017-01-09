@@ -1,0 +1,141 @@
+
+         <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Agregar Ejercicio</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <div id="map_canvas" style="width:auto; height: 500px;">
+                            <form>
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Titulo</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" id="titulo" aria-describedby="TituloHelp" placeholder="Ingrese el titulo">
+                                    <small id="TituloHelp" class="form-text text-muted">Ingrese un titulo representativo.</small>
+                                  </div>
+
+                                  </div>
+                              </div>
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Descripcion</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Ingrese la descripcion completa del problema. Procure ser bien detallado </small>
+                                  </div>
+                              </div>
+                            <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Breve Descripcion</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Ingrese una breve descripcion representativa del problema  </small>
+                                  </div>
+                              </div>
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Dificultad</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                          Facil
+                                        </label>
+                                     </div>
+                                     <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1" checked>
+                                          Medio
+                                        </label>
+                                     </div>
+                                     <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option1" checked>
+                                          Dificil
+                                        </label>
+                                     </div> 
+                              </div>
+                              </div>
+                                <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Datos Entrada</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Separe las opciones por medio de un salto de linea. </small>
+                                  </div>
+                              </div> 
+
+
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Datos Salida</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Separe las opciones por medio de un salto de linea.</small>
+                                  </div>
+                              </div> 
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Ejemplo Datos Entrada</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Separe las opciones por medio de un salto de linea.</small>
+                                  </div>
+                              </div> 
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Ejemplos Datos Salida</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Separe las opciones por medio de un salto de linea. </small>
+                                  </div>
+                              </div> 
+                              <div class="panel panel-info">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Etiquetas</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <div class="form-group">
+                                      <textarea class="form-control" id="exampleTextarea" rows="3" aria-describedby="descrip"></textarea>
+                                    </div>
+                                    <small id="descrip" class="form-text text-muted">Separe las opciones por medio de un salto de linea. </small>
+                                  </div>
+                              </div>                                                           
+                                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                          </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -1,0 +1,203 @@
+div.container{	
+	background-color: #FFF2C4;
+	border-radius: 1%;
+	-webkit-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+}
+header{
+	width: 100%;
+	background-color: #6CADA3;
+	
+}
+header div{
+	margin: 0;
+}
+header h2{
+	color: white;
+	font-style: italic;
+	height: 100%;
+	background-position: bottom;
+}
+ul li{
+	list-style-type: none;
+	display: inline;
+}
+nav ul li{
+	display: block;
+	padding: 10px;
+}
+nav ul li a{
+	color: #339EAD;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+nav ul li{
+	border-bottom: 1px solid #AD9E8F;
+}
+#loggeo{
+	width: 100%;
+	border: 3px solid #339EAD;
+	float: left;
+	border-radius: 10%;
+	background-color: #F6EED3;
+	-webkit-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+}
+}
+header ul li a{
+	color:#AD9E8F;
+	width: 100%;
+}
+header ul li{
+	background-color: white;
+	border: 1px;
+	border-color: #AD9E8F;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+}
+header ul #primario,.btn.btn-primary{
+	background-color: #339EAD;
+	border-color: #20CDFF;
+	margin right: 0px;
+	margin-left: 0px;
+}
+header ul li a:hover{
+	text-decoration: none;
+	background-color: white;
+}
+header ul #primario a{
+	color:white;
+	background-color: #339EAD;
+	border: 1px solid #339EAD;
+}
+header ul #primario a:hover,.btn.btn-primary:hover{
+	background-color: #339EAD;
+	color: #555555;
+}
+iframe{
+	padding: 0;
+	-webkit-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+}
+}
+li#primario.col-md-2{
+	margin-left: 15px;
+}
+li#primario.col-md-2.col-xs-12{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 0; 
+}
+div.panel.panel-primary.col-xs-12{
+	padding: 0;
+	background-color: #F6EED3;
+	-webkit-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+}
+#cabeceraExternos{
+	background-color: #339EAD;
+	border-color: #339EAD;
+}
+#prog{
+	-webkit-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 10px 28px 0px rgba(0,0,0,0.75);
+}
+#btnEst,#btnProf{
+	width: 100%;
+	border-color: #F6EED3;
+	text-align: left;
+	background-color: #F6EED3;
+}
+footer{
+	color: rgba(0,0,0,0.75);
+	margin-left: : 2px;
+}
+#popover{
+	position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 21em;
+    max-width: 100%;
+ }
+ #popover .popover-title{
+ 	color: #F59130;
+ 	font-weight: bold;
+ 	font-size: 1.5em;
+ 	font-family: sans-serif;
+ }
+ #popcontenido{
+ 	font-family: sans-serif;
+	color: #339EAD;
+	font-style: italic;
+	text-align: justify;
+	word-wrap: break-word;
+ }
+ #carousel-example-generic{
+ 	max-width: 80%;
+ 	height: 5%;
+ 	left: 10%;
+ 	object-position: center;
+ }
+ div.modal-header{
+	background-color: #339EAD;
+ }
+ div.modal-header h4{
+ 	color: white;
+ }
+ div.modal-body,div.modal-footer{
+ 	background-color: #F6EED3;
+ }
+ button.btn.btn-default.dropdown-toggle{
+ 	padding: 0;
+ 	visibility: hidden;
+ }
+ .no-necesario p{
+ 	color: #6CADA3;
+ }
+ ul.dropdown-menu.col-xs-12{
+ 	width: -100%;
+ 	padding: 0;
+ }
+ ul.dropdown-menu li a{
+ 	background-color: #DFDBDB;
+ 	margin-bottom: 2px;
+ }
+ ul.dropdown-menu li.active a{
+ 	color:white;
+ 	background-color: #339EAD;
+ 	border-color: #339EAD;
+	width: 100%;
+ }
+ul.dropdown-menu li.active{
+  	background-color: #339EAD;
+	border-color: #20CDFF;
+	margin right: 0px;
+	margin-left: 0px;
+}
+ ul.dropdown-menu li{
+  background-color: white;
+	border: 1px;
+	border-color: #AD9E8F;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+}
+ .no-necesario+div.col-lg-12{
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+	display: inline-flex;
+	text-align:right;
+ }

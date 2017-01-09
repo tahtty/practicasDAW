@@ -1,0 +1,51 @@
+[
+	{
+		"name": "Carmen Karina Vaca Ruiz",
+		"password": "carmenvaca",
+		"email": "cvaca@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968"
+	},
+		{
+		"name": "Marco Antonio Calderón Argüello",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968"
+	},
+		{	
+		"name": "Rafael Ignacio Bonilla Armijos",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968"
+	},
+		{	
+		"name": "Cristina Lucia Abad Robalino",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968"
+	},
+		{	
+		"name": "Orlando Enrique Zambrano Moreno",
+		"password": "marcoscalderon",
+		"email": "ancalder@espol.edu.ec",
+		"type":"profesor",
+		"birthday": "22-10-1968"
+	},
+		{	
+		"name": "Jose Antonio Viteri Cuenca",
+		"password": "marcoscalderon",
+		"email": "javiteri@espol.edu.ec",
+		"type":"estudiante",
+		"birthday": "22-10-1968"
+	},
+		{	
+		"name": "Carlos Leon",
+		"password": "marcoscalderon",
+		"email": "camaleon@espol.edu.ec",
+		"type":"estudiante",
+		"birthday": "22-10-1968"
+	}
+]

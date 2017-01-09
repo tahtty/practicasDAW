@@ -1,0 +1,34 @@
+[
+	{
+		"titulo" : "Avance0",
+		"responsable": "Rafael Bonilla",
+		"descripcion": "La cuenta de Twitter del Instituto Geofísico del Ecuador emite un reporte cada vez que hay un movimiento telúrico.",
+		"fecha": "12-12-16",
+		"etiquetas" : "sismo  posi",
+		"archivo" : "data/proyectos/Avance0.pdf"
+	},
+		{
+		"titulo" : "Avance1",
+		"responsable": "Rafael Bonilla",
+		"descripcion": "La cuenta de Twitter del Instituto Geofísico del Ecuador emite un reporte cada vez que hay un movimiento telúrico.",
+		"fecha": "12-12-16",
+		"etiquetas" : "sismo   posi",
+		"archivo" : "data/proyectos/Avance1.pdf"
+	},
+	{
+		"titulo" : "Avance2",
+		"responsable": "Marcos Calderon",
+		"descripcion": "La cuenta de Twitter del Instituto Geofísico del Ecuador emite un reporte cada vez que hay un movimiento telúrico.",
+		"fecha": "12-12-16",
+		"etiquetas" : "sismo posi",
+		"archivo" : "data/proyectos/Avance2.pdf"
+	},
+	{
+		"titulo" : "Proyecto parcial",
+		"responsable": "Marcos Calderon",
+		"descripcion": "La cuenta de Twitter del Instituto Geofísico del Ecuador emite un reporte cada vez que hay un movimiento telúrico.",
+		"fecha": "12-12-16",
+		"etiquetas" : "sismo   posi",
+		"archivo" : "data/proyectos/Avance0.pdf"
+	}
+]

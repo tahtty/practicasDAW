@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EL Curso-Fundamentos de Programación</title>
+	<link rel="stylesheet" type="text/css" href="css/stiloCurso.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<header class="col-lg-12 col-xs-12">
+				<div class="row">
+					<img class="col-lg-2" src="images/logo temporal.jpg" alt="logo here">
+					<h2 class="col-lg-5"><br>Curso en línea de <br>Fundamentos de Programación</h2>
+				</div>
+				<div id="menu" class="row">
+					<ul class="nav nav-tabs col-lg-11">
+						<li class="col-lg-2 active" id="primario"><a href="#">Inicio</a></li>
+						<li class="col-lg-2"><a href="#">El Curso</a></li>
+						<li class="col-lg-3"><a href="#">Semana a semana</a></li>
+						<li class="col-lg-2"><a href="#">Equipo</a></li>
+						<li class="col-lg-2"><a href="#">Ayudantías</a></li>
+					</ul>
+					<div class="col-lg-1">
+						<div class="no-necesario col-lg-12 col-xs-2"><p>pub</p></div>
+						<div class="col-lg-12 col-xs-10">
+							<ul class="dropdown-menu col-xs-1">
+								<li><a href="#">Perfil</a></li>
+								<li><a href="#">SANDBOX</a></li>
+								<li><a href="#">Proyectos</a></li>
+							</ul>
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="images/default_avatar_user.jpg" height="40px"> <span class="caret"></span>
+							</button>
+						</div>
+					</div>
+				</div>		
+			</header>
+		</div>
+		<div id="contenido">
+			<div class="row">
+				<div class="col-lg-12"><hr></div>
+				<div class="col-lg-1 col-xs-12"></div>
+				<div class="col-lg-5 col-xs-12" id="descripcion">
+					<div class="panel panel-primary col-xs-12">
+						<div class="panel-heading" id="cabeceraDesc">Descripción del curso</div>
+						<div class="panel-body">
+							<p>El curso presenta a los estudiantes estrategias para resolver problemas comunes en diversas profesiones por medio del diseño e implementación de soluciones basadas en el uso de un lenguaje de programación. Cubre los principios b{asicos para que el estudiante pueda leer y escribir programas; haciendo énfasis en el diseño y análisis de algoritmos. Además, introduce a los estudiantes en el uso de herramientas de desarrollo y depuración.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-xs-12"></div>
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-12"><h3 class=" col-xs-12 t3">Requisitos</h3></div>
+						<div class="col-lg-12" id="requisitos">
+							<table>
+								<tr>
+									<th class="titulo-fila">Prerequisitos</th>
+									<td>Herramientas de Colaboración Digital</td>	    
+								</tr>
+								<tr>
+									<th class="titulo-fila">Correquisito</th>
+									<td>Ninguno</td>
+								</tr>
+								<tr>
+									<th class="titulo-fila">Nivel mínimo de estudios aprobado en la carrera</th>
+									<td>--</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-xs-12"></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12"><br></div>
+				<div class="col-lg-4 col-xs-4"></div>
+				<div class="col-lg-4">
+					<img class="img-rounded col-lg-12 col-xs-4" src="images/educational.jpg">
+				</div>
+				<div class="col-lg-4 col-xs-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-1 col-xs-2"></div>
+				<div class="col-lg-4 col-xs-4" id="syllabus">
+					<div class="col-lg-12"><h3 class=" col-xs-12 t3">Syllabus</h3></div>
+						<div class="col-lg-12">
+							<button type="button" class="btn btn-primary" id="syllabus" data-toggle="modal" data-target="#modal1.bs-example-modal-lg" data-whatever="#politicas"><img src="images/Syll.jpg" height="300px"></button>
+							<div class="modal fade bs-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="syllabus">
+								<div class="modal-dialog modal-lg" role="document">
+								    <div id="hojassyllabus" class="modal-content">
+								      <embed src="data/Syllabus.pdf"></embed>
+								    </div>
+								 </div>
+							</div>
+						</div>
+					</div>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4 col-xs-4" id="politicas">
+					<div class="col-lg-12"><h3 class=" col-xs-12 t3">Políticas</h3></div>
+						<div class="col-lg-12">
+							<button type="button" class="btn btn-primary" id="politica" data-toggle="modal" data-target="#modal2.bs-example-modal-lg" data-whatever="#syllabus"><img src="images/Poli.jpg" height="300px"></button>
+							<div class="modal fade bs-example-modal-lg" id="modal2" tabindex="-1" role="dialog" aria-labelledby="politica">
+								<div class="modal-dialog modal-lg" role="document">
+								    <div id="hojaspoliticas" class="modal-content">
+								      <embed src="data/Politicas.pdf"></embed>
+								    </div>
+								 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-xs-12"><hr></div>
+			<div class="col-lg-1"></div>
+			<div class="col-lg-7">
+				<footer class="col-lg-12 col-xs-12">&copy; Espol &mdash; <label>Todos los derechos reservados</label></footer>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/curso.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="javascript/inicurso.js"></script>
+</body>
+</html>

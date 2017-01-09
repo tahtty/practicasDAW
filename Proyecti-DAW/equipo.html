@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Equipo Fundamentos</title>
+	<link rel="stylesheet" type="text/css" href="css/week_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="javascript/week.js"></script>
+
+	<style media="screen">
+		div.container{
+			background-color: #fff;
+		}
+		#Coordinador img{
+		    border-radius: 50%;
+		}
+		div.container2{
+			padding: 5%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<header class="col-lg-12 col-xs-12">
+				<div class="row">
+					<img class="col-lg-2" src="images/logo temporal.jpg" alt="logo here">
+					<h2 class="col-lg-5"><br>Curso en línea de <br>Fundamentos de Programación</h2>
+				</div>
+				<ul class="row nav nav-tabs">
+					<li class="col-lg-2 col-xs-12"><a href="index.html">Inicio</a></li>
+					<li class="col-lg-2 col-xs-12"><a href="curso.html">El Curso</a></li>
+					<li class="col-lg-2 col-xs-12"><a href="semana.html">Semana a semana</a></li>
+					<li class="col-lg-2 col-xs-12 active" id="primario"><a href="equipo.html">Equipo</a></li>
+					<li class="col-lg-2 col-xs-12"><a href="ayudantias.html">Ayudantías</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="container2">
+			<section class="row" id="Coordinador">
+				<h2>Coordinador </h2>
+			</section>
+			<hr>
+			<section class="" id="profesores">
+				<h2>Profesores: </h2>
+			</section>
+			<section class="" id="ayudantes">
+				<h2>Ayudantes: </h2>
+			</section>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	$.get('javascript/profesores.json', function (data) {
+
+		$.each(data, function(i, profesor) {
+			var cargo = profesor.cargo;
+			var $div = $('<div class="col-sm-6 col-md-4">');
+			var $thum = $('<div class="thumbnail">');
+			var $image = $('<img/>').attr("src",profesor.foto);
+			var $caption = $('<div class="caption"/>');
+			$caption.append($('<h3/>').text(profesor.nombre))
+					.append($('<h5/>').text(profesor.cargo))
+					.append($('<h5/>').text(profesor.mail))
+					.append($('<h5/>').text(profesor.telefono));
+			$thum.append($image, $caption);
+			$div.append($thum);
+			if (cargo.length > 1) {
+				$("#Coordinador").append($div);
+			} else {
+				$("#profesores").append($div);
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	$.get('javascript/AYUDANTES.json', function (data) {
+
+		$.each(data, function(i, ayudante) {
+			
+			var $div = $('<div class="col-sm-6 col-md-4">');
+			var $thum = $('<div class="thumbnail">');
+			var $caption = $('<div class="caption"/>');
+			$caption.append($('<h3/>').text(ayudante.nombre))
+					.append($('<h5/>').text(ayudante.matricula))
+					.append($('<h5/>').text(ayudante.correo))
+					.append($('<h5/>').text(ayudante.horario));
+			var $caption2 = $('<div class="caption2"/>');
+			$caption2.append($('<h3/>').text(ayudante.dia))
+					.append($('<h5/>').text(ayudante.edificio))
+					.append($('<h5/>').text(ayudante.aula))
+					.append($('<h5/>').text(ayudante.hora));
+			$thum.append($caption, $caption2);
+			$div.append($thum);
+			
+				$("#ayudantes").append($div);
+			
+		});
+	});
+</script>
+</html>

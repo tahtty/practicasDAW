@@ -23,11 +23,12 @@
             if(xhttp.readyState==4 && xhttp.status==200){
 
               var persona = xhttp.responseXML;
+              <
               nombre = persona.querySelector("persona nombre").textContent;
               apellido = persona.querySelector("persona apellido").textContent;
               edad = persona.querySelector("persona edad").textContent;
               document.getElementById("nombreTxt").textContent = nombre;
-              document.getElementById("apellidoTxt").textContent = apellido;
+              document.getElementById("apellidoTxt").innerHTML = apellido;
               document.getElementById("edadTxt").textContent = edad;
             }
           };
