@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap",
+  "homepage": "https://github.com/tahtty/practicasDAW",
+  "description": "Ejemplo pagina usando bower",
+  "main": "index.html",
+  "keywords": [
+    "Bower"
+  ],
+  "authors": [
+    "Tahís Ahtty"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
